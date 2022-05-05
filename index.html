@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <style>
+            body {
+                font-family: sans-serif;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            label {
+                font-size: 18px;
+                display: block;
+                padding-bottom: 10px;
+            }
+            input {
+                display: block;
+            }
+            form {
+                background-color: #4242bb;
+                padding: 40px 40px 40px 40px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 id="title">Tell me about fishing</h1>
+        <p id="description">
+            This is a survey where you can tell us about fishing
+        </p>
+        <form id="survey-form">
+            <label id="name-label">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="First Name"><br>
+            <label id="email-label">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Best email"><br>
+            <label id="number-label">Number:</label> 
+            <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+            <label id="fish-species">Fish Species</label>
+            <select id="dropdown" name="fish species">
+                <option value="rockfish">Rockfish</option>
+                <option value="pickeral">Pickeral</option>
+                <option value="bass">Bass</option>
+                <option value="crappie">Crappie</option>
+            </select>
+
+            <br>
+            <input type="radio" name="season" value="spring">Spring<br>
+            <input type="radio" name="season" value="summer">Summer<br>
+            <input type="radio" name="season" value="fall">Fall<br>
+            <br>
+
+            <label id="amount-caught">Amount Caught</label>
+            <input type="checkbox" id="count1" name="count1" value="0 to 3">0 to 3<br>
+            <input type="checkbox" id="count2" name="count2" value="4 to 7">4 to 7<br>
+            <input type="checkbox" id="count3" name="count3" value="8 or more">8 or more<br>
+            
+
+            <textarea placeholder="Additional comments"></textarea>
+            <input type="submit" id="submit">
+        </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
